@@ -1,0 +1,451 @@
+/* Start Varbiles */
+:root {
+    --main-font-weight : 600;
+    --main-color : #0078FF;
+    --main-background-color : #F5F5F5;
+}
+/* End Varbiles */
+
+/* Start Golabl */
+* {
+    text-decoration: none !important;
+    list-style: none;
+    direction: rtl;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+.title-section h2 {
+    font-size: 48px;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+.title-section p {
+    position: relative;
+    padding-bottom: 15px;
+}
+.title-section p::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+.whatsapp {
+    font-size: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+/* End Golabl */
+
+
+/* Start Navbor */
+nav {
+    position: fixed !important;
+    background-color: #040404;
+    z-index: 99;
+}
+nav img {
+    width: 50px;
+}
+nav button i {
+    color: #fff !important;
+}
+nav .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    font-weight: var(--main-font-weight);
+}
+nav ul li a {
+    color: #fff !important;
+    font-weight: var(--main-font-weight);
+    position: relative;
+    overflow: hidden;
+}
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    top: 95%;
+    left: -100%;
+    transition: left .5s;
+}
+nav ul li a:hover::before , 
+nav ul li .active::before {
+    left: 10%;
+}
+
+nav .dropdown-menu a:hover {
+    color: #0078FF !important;
+}
+nav ul .dropdown-menu a{
+    color: rgba(0, 0, 0, 0.856) !important;
+}
+@media (max-width: 991px){
+    nav ul li a::before {
+        display: none;
+    }
+}
+/* End Navbor  */
+
+/* Start Header */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.534)), url('../images/—Pngtree—three\ industrial\ air\ conditioning\ equipment_3391756\ \(1\).jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+header .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+header .container h1 {
+    font-size: 45px;
+    font-weight: var(--main-font-weight);
+    padding-bottom: 40px;
+}
+header .container h2 {
+    font-size: 30px;
+    font-weight: var(--main-font-weight);
+    width: 252px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.808);
+    animation: control-width 3s 1s both infinite alternate;
+}
+@keyframes control-width {
+    from {
+        width: 0;
+    }
+    to {
+        width: 253px;
+    }
+}
+@media (max-width: 991px) {
+    header .container h1 {
+        font-size: 40px;
+    }
+    header .container h2 {
+        font-size: 24px;
+    }
+}
+/* End Header */
+
+/* Start Section About  */
+.about {
+    background-color: var(--main-background-color);
+    padding-block: 60px;
+}
+.about .container {
+    background-color: #fff;
+}
+.about .container .box-shadow-full {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+}
+.about .title-s {
+    font-weight: var(--main-font-weight);
+    color: rgb(30, 30, 30);
+    font-size: 1.25rem;
+}
+.about .skill-mf span {
+    display: inline-block;
+    margin: 20px 0 10px;
+}
+.about .text-about h2 {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.about .text-about h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+.about .text-about p {
+    font-size: 20px;
+    color: rgba(78, 78, 78, 0.794);
+}
+/* End Section About  */
+
+/* Start Section Services */
+.services {
+    background-color: var(--main-background-color);
+    padding-block: 60px;
+}
+.title-section {
+    text-align: center;
+}
+.services .about-services {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+.services .about-services .services-icon img {
+    width: 100%;
+    height: 300px;
+}
+.services .about-services .services-content h3 {
+    padding-block: 15px;
+    font-size: 22px;
+    color: #1E1E1E;
+}
+.services .about-services .services-content p {
+    color: #4E4E4E;
+    padding: 10px;
+}
+/* End Section Services */
+
+/* Start Section Counter */
+.section-counter {
+    background-image: linear-gradient(rgba(59, 142, 238, 0.815) , rgba(59, 142, 238, 0.89)), url('../images/18.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.section-counter .box-counter {
+    text-align: center;
+    color: #fff;
+}
+.section-counter .icon-counter span {
+    display: inline-block;
+    width: 100px;
+    line-height: 1.3;
+    height: 100px;
+    border: 8px solid rgba(255, 255, 255, 0.863);
+    border-radius: 50%;
+}
+.section-counter .icon-counter span i {
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 32px;
+}
+.section-counter .counter-num p {
+    font-size: 32px;
+    padding-block: 10px;
+}
+/* End Section Counter */
+
+/* Start Section Portfolio */
+.portfoilo  {
+    background-color: var(--main-background-color);
+}
+.portfoilo .work-box .img-work {
+    overflow: hidden;
+    height: 260px;
+}
+.portfoilo .work-box img {
+    transition: transform 1s;
+    cursor: pointer;
+}
+.portfoilo .work-box:hover img {
+    transform: scale(1.3);
+}
+.portfoilo .work-content  {
+    background-color: #fff;
+}
+.portfoilo .work-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 0 10px 15px;
+}
+.portfoilo .work-content p {
+    font-size: 13px;
+    padding: 0 0 10px 15px;
+}
+.portfoilo .work-content p span {
+    color: var(--main-color);
+}
+.portfoilo .work-content .icon {
+    color: var(--main-color);
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    left: 70px;
+}
+.portfoilo .light-container {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.portfoilo .light-container .light-box {
+    width: 85%;
+    height: 80%;
+    background-image:  url('../images/1.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(0, 0, 0);
+}
+@media (max-width :767px) {
+    .portfoilo .work-content .icon {
+        top: 0px;
+        left: 50%;
+        transition: translateX(-50%);
+    }
+}
+@media (min-width :767px) and (max-width: 1399px) {
+    .portfoilo .work-content h3 {
+        font-size: 18px;
+    }
+    .portfoilo .work-content .icon {
+        top: 0;
+        left: 40%;
+        transition: translateX(-50%);
+    }
+}
+/* End Section Portfolio */
+
+ /* Start Section Testimonial Item  */
+ .testimonial {
+     background-image: linear-gradient(rgba(75, 156, 242, 0.774),rgb(38, 42, 46)),url('../images/14.PNG');
+     background-size: cover;
+     background-position: center center;
+     text-align: center;
+     padding-block: 80px;
+     color: #fff;
+ }
+ .testimonial .carousel-item img{
+     border-radius: 15px;
+     width: 5824px;
+ } 
+ .testimonial .img-testimoial span {
+     font-size: 22.5px;
+     font-weight: var(--main-font-weight);
+ }
+ .testimonial .text-testimoial p {
+     font-size: 20px;
+     line-height: 1.6;
+     font-weight: 300;
+     padding-bottom: 80px;
+ }
+ .carousel-indicators {
+     bottom: -3rem;
+ }
+ /* End Section Testimonial Item  */
+
+ /* Start Section Contact */
+ .contact {
+     background-image: linear-gradient(rgba(62, 142, 233, 0.87),rgba(62, 142, 233, 0.897)) ,
+      url('../images/17.jpg');
+     background-size: cover;
+     background-position: center center;
+     padding-block: 80px;
+ }
+
+ .contact .box-parent h3 {
+     position: relative;
+     font-size: 32px;
+     color: #1E1E1E;
+ }
+ .contact .box-parent h3::after {
+     content: "";
+     position: absolute;
+     top: 120%;
+     right: 0;
+     width: 17%;
+     height: 3px;
+     background-color: var(--main-color);
+ }
+ .contact .box-parent .child-one input ,
+ .contact .box-parent .child-one textarea {
+     border: 1px solid rgba(0, 0, 0, 0.246);
+ }
+ .contact .box-parent .child-one [type="submit"]{
+     border-radius: 50px;
+     font-size: 20px;
+ }
+ .contact .box-parent .child-one form {
+     text-align: center;
+ }
+ .contact .box-parent .child-two p {
+     font-size: 20px;
+     font-weight: 300;
+ }
+ .contact .box-parent .child-two ul {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .contact .box-parent .child-two ul li {
+     padding-bottom: 15px;
+     color: #4E4E4E;
+ }
+ .contact .box-parent .child-two ul li .dtails{
+     color: var(--main-color);
+     transition: color .5s;
+     margin-right: 10px;
+ }
+ .contact .box-parent .child-two .socials li {
+     padding: 10px;
+     text-align: center;
+     border-radius: 50%;
+     border: 3px solid var(--main-color);
+     margin-right: 10px;
+     transition: all .5s;
+     width: 50px;
+     height: 50px;
+     line-height: 1.2;
+ }
+ .contact .box-parent .child-two .socials li a i {
+     color: #4E4E4E;
+     transition: color .5s;
+     font-size: 22px;
+ }
+ .contact .box-parent .child-two .socials li:hover {
+     background-color: var(--main-color);
+     border: 3px solid rgba(255, 255, 255, 0.808);
+ }
+ .contact .box-parent .child-two .socials li:hover i {
+     color: #fff;
+ }
+ @media (max-width: 767px) {
+    .contact .box-parent .child-two {
+        padding-top: 30px;
+    }
+    .contact .dtails-text {
+        width: 100% !important;
+    }
+ }
+ /* End Section Contact */
+
+ /* Start Footer */
+ .footer {
+     background-color: #0062D3;
+     padding:20px;
+     color: #fff;
+     text-align: center;
+ }
+ /* End Footer */
